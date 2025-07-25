@@ -13,4 +13,6 @@ collections:
         name: "index"
         file: "index.md"
         fields:
-          - { label: "Contenido", name: "body", widget: "html" }
+          - { label: "Contenido", name: "body", widget: "markdown" }
+editor:
+  preview: true
