@@ -3485,10 +3485,4 @@ break;
 			});
 		});
 	});
-            </script>
-		<script>
-		  const hash = window.location.hash;
-		  if (hash.includes('confirmation_token') || hash.includes('invite_token')) {
-		    window.location.href = '/admin/' + hash;
-		  }
-		</script>
+            </script>		
