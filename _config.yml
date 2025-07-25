@@ -1,0 +1,9 @@
+title: Besen Group
+description: Sitio web oficial de Besen Group
+baseurl: ""  # dejar vacío si está en la raíz del dominio
+url: "https://besen-group.eu"
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
