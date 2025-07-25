@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: main  # o master, según tu repositorio
+
+media_folder: "assets/uploads" # donde se guardan las imágenes en el repo
+public_folder: "/assets/uploads" # ruta pública para el sitio
+
+collections:
+  - name: "pages"
+    label: "Páginas"
+    folder: "pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Cuerpo", name: "body", widget: "markdown" }
