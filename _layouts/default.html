@@ -8524,6 +8524,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </head>
         <body itemtype='https://schema.org/WebPage' itemscope='itemscope' class="wp-singular page-template page-template-product-category9 page-template-product-category9-php page page-id-18823 wp-custom-logo wp-theme-astra wp-child-theme-astra-child ast-desktop ast-page-builder-template ast-no-sidebar astra-4.11.7 group-blog ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-sticky-main-shrink ast-sticky-header-shrink ast-inherit-site-logo-sticky ast-primary-sticky-enabled astra-addon-4.11.5">
             {{ content }}
-        </body>
+        <script>
+		  const hash = window.location.hash;
+		  if (hash.includes('confirmation_token') || hash.includes('invite_token')) {
+		    window.location.href = '/admin/' + hash;
+		  }
+		</script>
+		</body>
     </html>
     <!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1753340867 -->
